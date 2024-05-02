@@ -1,0 +1,25 @@
+p1column = point_clouds(:,:,1:11);
+p2column = point_clouds(:,:,14:24);
+p3column = point_clouds(:,:,25:34);
+p4column = point_clouds(:,:,39:48);
+p5column = point_clouds(:,:,49:58);
+p6column = point_clouds(:,:,64:72);
+p7column = point_clouds(:,:,73:81);
+p8column = point_clouds(:,:,89:96);
+p9column = point_clouds(:,:,97:103);
+p10column = point_clouds(:,:,116:120);
+p11column = point_clouds(:,:,121:122);
+measured_points1 = cat(3,p1column,p2column,p3column,p4column,p5column,p6column,p7column,p8column,p9column,p10column,p11column);
+
+p1column2 = point_clouds2(:,:,1:6);
+p2column2 = point_clouds2(:,:,19:24);
+p3column2 = point_clouds2(:,:,31:36);
+p4column2 = point_clouds2(:,:,37:42);
+p5column2 = point_clouds2(:,:,49:54);
+p6column2 = point_clouds2(:,:,55:60);
+measured_points2 = cat(3,p1column2,p2column2,p3column2,p4column2,p5column2,p6column2);
+measured_points = cat(3,measured_points1,measured_points2);
+% % measured_points = cat(3,p1column,p2column,p3column,p4column,p5column,p6column,p7column,p8column,p9column);
+% % measured_points = cat(3,p10column,p11column);
+% % points = point_clouds(:,:,10:30);
+% % measured_points = points(:,:,:);
